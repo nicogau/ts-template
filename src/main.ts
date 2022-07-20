@@ -61,9 +61,13 @@ const showEntity = (obj: ApiType<Category>) => {
 // si tu veux faire du conditionnel au moment du runtime et non juste `a la compilation:
 // avec les typeguards mais la doc à l'air déprécié :
 // https://www.typescriptlang.org/docs/handbook/advanced-types.html
+
+// pour bien comprendre le principe des types guards: 'narrowing' de la doc typescriptlang
 // https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates
 
-// Supplier type guards
+
+
+// Category type guards
 // https://blog.theodo.com/2022/01/typescript-replace-as-typeguards/
 const isSupplier = (element: unknown): element is Supplier =>
     Object.prototype.hasOwnProperty.call(element, "images")
