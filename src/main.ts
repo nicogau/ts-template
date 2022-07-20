@@ -63,7 +63,7 @@ const showEntity = (obj: ApiType<Category>) => {
 // https://www.typescriptlang.org/docs/handbook/advanced-types.html
 // https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates
 
-// Category type guards
+// Supplier type guards
 // https://blog.theodo.com/2022/01/typescript-replace-as-typeguards/
 const isSupplier = (element: unknown): element is Supplier =>
     Object.prototype.hasOwnProperty.call(element, "images")
